@@ -1,0 +1,45 @@
+
+.banner-area {
+    background-image: url('https://i.ibb.co/SyhMCRJ/banner-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 500px;
+}
+.banner-text {
+    position:absolute;
+    text-align: left;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #8DC63F;
+    background-color: #1B1947;
+    padding: 50px;
+}
+form .btn {
+    background-color: #8DC63F;
+}
+form .btn i {
+    color: white;
+}
+@media only screen and (max-width: 992px) {
+    .banner-text {
+        left: 35%;
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+    .banner-area {
+        background-size: cover;
+    
+    }
+    .banner-text {
+        left: 40%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .banner-text {
+        left: 45%;
+    }
+}
