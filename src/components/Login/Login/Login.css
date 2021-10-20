@@ -1,0 +1,32 @@
+.login-wrap {
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    padding: 20px;
+}
+@media only screen and (min-width: 992px){
+.login-wrap {
+    width: 35%;
+    margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .login-wrap {
+        width: 50%;
+        margin: 0 auto;
+        }
+    }
+
+@media only screen and (max-width: 767px){
+    .login-wrap {
+        width: 75%;
+        margin: 0 auto;
+        }
+    }
+
+    @media only screen and (max-width: 575px){
+        .login-wrap {
+            width: 85%;
+            margin: 0 auto;
+            }
+        }

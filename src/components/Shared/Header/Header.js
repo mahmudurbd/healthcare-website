@@ -18,11 +18,11 @@ const Header = () => {
                     <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                     <Nav.Link as={Link} to="/telemedicine">TeleMedicine</Nav.Link>
                     {user.email ?
-                    <button onClick={logOut} className="btn btn-warning">logout</button>:
+                    <button onClick={logOut} className="btn logout-btn text-white me-1">Logout</button>:
                     <Nav.Link as={Link} to="/login">Login</Nav.Link>}
                     </Nav>
                     <Navbar.Text>
-                        Signed in as: <a href="/login">{user?.displayName}</a>
+                        <a href="/login">{user?.displayName}</a>
                     </Navbar.Text>
                     <br /><br />
                     <Link className="button mx-2" to="/appointment">MAKE AN APPOINTMENT</Link>

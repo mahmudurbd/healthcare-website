@@ -1,11 +1,11 @@
 
 import useAuth from '../../hooks/useAuth';
-
+import './Register.css';
 const Register = () => {
     
-    const {handleEmail,handlePassword,handleRegister, handleName} = useAuth();
+    const {handleEmail,handlePassword,handleRegister, handleName, signInUsingGoogle} = useAuth();
     return (
-        <div className="w-25 mx-auto mt-5">
+        <div className="mt-5 register-wrap">
             <h2>Please Register</h2>
             <form onSubmit={handleRegister}>
              <div className="form-outline mb-4">
@@ -41,8 +41,8 @@ const Register = () => {
             <div className="text-center">
                 <p>Already register? <a href="/login">Login</a></p>
                 <p>or sign up with:</p>
-                <button type="button" className="btn btn-primary btn-floating mx-1">
-                <i className="fab fa-google"></i> Login with Google
+                <button onClick={signInUsingGoogle} type="button" className="btn btn-primary btn-floating mx-1">
+                <i className="fab fa-google"></i> Google
                 </button>
             </div>
             </form>

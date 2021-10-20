@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
-
+import './Login.css';
 const Login = () => {
     const {signInUsingGoogle,loginProcess} = useAuth();
 
@@ -21,7 +21,7 @@ const Login = () => {
         console.log(loginPassword);
     }
     return (
-        <div className="w-25 mx-auto mt-5">
+        <div className="mt-5 login-wrap">
             <h2>Please Login</h2>
             <form onSubmit={handleSubmission}>
             <div className="form-outline mb-4">
@@ -52,9 +52,9 @@ const Login = () => {
             <input  type="submit" className="btn btn-primary btn-block mb-4"value="Login"/> 
             <div className="text-center">
                 <p>Not a member? <a href="/register">Register</a></p>
-                <p>or sign up with:</p>
+                <p>or login with:</p>
                 <button onClick={signInUsingGoogle} type="button" className="btn btn-primary btn-floating mx-1">
-                <i className="fab fa-google"></i> Login with Google
+                <i className="fab fa-google"></i> Google
                 </button>
             </div>
             </form>

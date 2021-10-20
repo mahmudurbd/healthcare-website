@@ -5,6 +5,9 @@
     color: #fff;
     font-weight: 700;
 }
+.logout-btn {
+    background-color: #80B636;
+}
 .button:hover {
     background-color: #81b636de;
     color: #fff;

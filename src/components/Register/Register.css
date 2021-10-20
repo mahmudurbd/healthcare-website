@@ -1,0 +1,32 @@
+.register-wrap {
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    padding: 20px;
+}
+@media only screen and (min-width: 992px){
+.register-wrap {
+    width: 35%;
+    margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .register-wrap {
+        width: 50%;
+        margin: 0 auto;
+        }
+    }
+
+@media only screen and (max-width: 767px){
+    .register-wrap {
+        width: 75%;
+        margin: 0 auto;
+        }
+    }
+
+    @media only screen and (max-width: 575px){
+        .register-wrap {
+            width: 85%;
+            margin: 0 auto;
+            }
+        }
